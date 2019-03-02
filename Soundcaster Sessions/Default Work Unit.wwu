@@ -65,7 +65,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="LoPass_Grandir" ID="{2DE43660-BC42-44C0-991B-10C3D50D4242}"/>
-							<Value>100</Value>
+							<Value>9.49390528546351E-312</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RPM" ID="{9112AA05-F577-44FD-9F4E-4424158129E6}"/>
