@@ -304,6 +304,7 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -386,6 +387,7 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -442,6 +444,7 @@
 								<Value>37</Value>
 							</ValueList>
 						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-9</Value>
@@ -456,9 +459,9 @@
 							<Custom>
 								<Effect Name="Wwise Delay (Custom)" ID="{C8027EBF-F368-48A9-A8A7-7AF2D72288E0}" ShortID="841123199" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 									<PropertyList>
-										<Property Name="DelayTime" Type="Real32" Value="0.26"/>
+										<Property Name="DelayTime" Type="Real32" Value="0.16"/>
 										<Property Name="Feedback" Type="Real32" Value="30.5"/>
-										<Property Name="WetDryMix" Type="Real32" Value="19"/>
+										<Property Name="WetDryMix" Type="Real32" Value="24.5"/>
 									</PropertyList>
 								</Effect>
 							</Custom>
@@ -810,7 +813,7 @@
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>7</Value>
+								<Value>8</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -1101,6 +1104,435 @@
 						<ActiveSource Name="Grandir" ID="{39C4C03E-6BCE-4AD6-92FC-8CD83E5B1CE8}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="Microbe_04" ID="{CE89B8D0-525B-46A3-AE38-4C1366E609FE}" ShortID="587294721">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{793DAB2F-6EE9-48D0-9DA0-8B15C70CB91F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="76"/>
+											<Property Name="Min" Type="Real64" Value="-51"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Mic 4" ID="{BB0ABE4D-D715-4C6E-A9CD-6B06D72288BC}" ShortID="214105925">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mic 4" ID="{734E6CEE-242E-4432-8ECD-5E6845EBB701}" ShortID="879931658">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.75794907121876E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.84575610521418"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.49587242227296"/>
+										<Property Name="TrimEnd" Type="Real64" Value="6.8579068089233"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Mic 4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Mic 4" ID="{734E6CEE-242E-4432-8ECD-5E6845EBB701}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 4_01" ID="{0A3856D5-BDD3-4722-8825-89A8B273C771}" ShortID="223018607">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mic 4" ID="{3E8EA80C-A77F-48D4-AC34-E45002A515F5}" ShortID="813329047">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.75794907121876E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.84246440202984"/>
+										<Property Name="TrimBegin" Type="Real64" Value="9.5967012430436"/>
+										<Property Name="TrimEnd" Type="Real64" Value="14.4661134746162"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Mic 4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Mic 4" ID="{3E8EA80C-A77F-48D4-AC34-E45002A515F5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 4_02" ID="{9AFC54C2-917C-4AB5-843C-0F79557374ED}" ShortID="487504592">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mic 4" ID="{3F202A9D-C69D-480D-94FC-FFC09858976E}" ShortID="458317941">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.75794907121876E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.60620762056243"/>
+										<Property Name="TrimBegin" Type="Real64" Value="22.4735845304017"/>
+										<Property Name="TrimEnd" Type="Real64" Value="26.8437539161825"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Mic 4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Mic 4" ID="{3F202A9D-C69D-480D-94FC-FFC09858976E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 4_03" ID="{7586C403-2404-47FE-8870-49BD5FA5AC4D}" ShortID="442123012">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mic 4" ID="{05B6BEE1-8408-4C51-AE37-E6BF2DB4FD39}" ShortID="445523666">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.75794907121876E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.60620762056243"/>
+										<Property Name="TrimBegin" Type="Real64" Value="28.9090246049961"/>
+										<Property Name="TrimEnd" Type="Real64" Value="33.3666559920094"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Mic 4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Mic 4" ID="{05B6BEE1-8408-4C51-AE37-E6BF2DB4FD39}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 4_04" ID="{3E1C3223-F52D-4B90-88FA-A93AEAA71E6A}" ShortID="462037562">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mic 4" ID="{167ED856-E393-4E85-AB90-88764B1BDD9F}" ShortID="215443678">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.75794907121876E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.48807922982871"/>
+										<Property Name="TrimBegin" Type="Real64" Value="39.6993147960782"/>
+										<Property Name="TrimEnd" Type="Real64" Value="44.0074399385692"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Mic 4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Mic 4" ID="{167ED856-E393-4E85-AB90-88764B1BDD9F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 4_05" ID="{5950D956-E0D9-4CC6-8050-7F9A1C5C0912}" ShortID="170919624">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mic 4" ID="{8300D07E-9BA1-4D94-9FC3-E12A53B6B025}" ShortID="288521048">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.75794907121876E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.29612059488643"/>
+										<Property Name="TrimBegin" Type="Real64" Value="52.0474231399611"/>
+										<Property Name="TrimEnd" Type="Real64" Value="55.9734767686727"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Mic 4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Mic 4" ID="{8300D07E-9BA1-4D94-9FC3-E12A53B6B025}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Copying" ID="{05820CAC-9A9C-42C5-BE44-5C4DEBBE2E11}" ShortID="779087398">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{38EFD1B5-209F-46E2-888D-480430DA4F41}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="51"/>
+											<Property Name="Min" Type="Real64" Value="-51"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Copie" ID="{3DEA6962-EB6F-4353-A348-BBC7FDDDF910}" ShortID="801232615">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Copie" ID="{68A3C84C-0591-4FA7-A498-1F09A5A0371F}" ShortID="693015723">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.041827506735487"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.13770818320512"/>
+										<Property Name="TrimBegin" Type="Real64" Value="58.7022914840783"/>
+										<Property Name="TrimEnd" Type="Real64" Value="63.3710255015094"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Copie.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Copie" ID="{68A3C84C-0591-4FA7-A498-1F09A5A0371F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Copie_01" ID="{61D8003B-7E95-43F1-B545-E5A8960CBD35}" ShortID="172086754">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Copie" ID="{6CE913E7-D0C3-43F1-B965-F1D35969AFC9}" ShortID="1043447749">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.041827506735487"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.13770818320512"/>
+										<Property Name="TrimBegin" Type="Real64" Value="64.5731741872789"/>
+										<Property Name="TrimEnd" Type="Real64" Value="68.9608796438311"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Copie.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Copie" ID="{6CE913E7-D0C3-43F1-B965-F1D35969AFC9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Copie_02" ID="{AF354499-4FF4-4585-AED5-81886740ADD0}" ShortID="80265668">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Copie" ID="{E4FFB756-0821-4C42-B5CC-668C2EEC4830}" ShortID="1027944170">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.041827506735487"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.13770818320512"/>
+										<Property Name="TrimBegin" Type="Real64" Value="79.2393358692831"/>
+										<Property Name="TrimEnd" Type="Real64" Value="85.809652911676"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Copie.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="217226874"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Copie" ID="{E4FFB756-0821-4C42-B5CC-668C2EEC4830}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Copie_03" ID="{041FDED3-C1B3-46CF-A6A0-2B97D2EF3697}" ShortID="285296831">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Copie" ID="{863CA4E1-C507-4A0C-AFA0-49AEC3EFDF81}" ShortID="217226874">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.138030772227125"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.13770818320512"/>
+										<Property Name="TrimBegin" Type="Real64" Value="85.9765708057423"/>
+										<Property Name="TrimEnd" Type="Real64" Value="90.6677871080437"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Copie.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="1027944170"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Copie" ID="{863CA4E1-C507-4A0C-AFA0-49AEC3EFDF81}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Copie_04" ID="{D7D9E646-9B67-4D4F-B8C7-2E84917E91A2}" ShortID="829559716">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Copie" ID="{51E70AFF-8873-4474-B463-5698B5DE3BDF}" ShortID="458583607">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.138030772227125"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.13770818320512"/>
+										<Property Name="TrimBegin" Type="Real64" Value="92.7008653573053"/>
+										<Property Name="TrimEnd" Type="Real64" Value="97.5544246701238"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Copie.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Copie" ID="{51E70AFF-8873-4474-B463-5698B5DE3BDF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Copie_05" ID="{1BDCA80E-83A8-419E-825D-60E86FA9F32E}" ShortID="732881809">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Copie" ID="{634CC158-E062-48C2-83D9-3B6C307BB25B}" ShortID="797106925">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.138030772227125"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.13770818320512"/>
+										<Property Name="TrimBegin" Type="Real64" Value="99.8490555474406"/>
+										<Property Name="TrimEnd" Type="Real64" Value="104.415181462411"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Copie.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Copie" ID="{634CC158-E062-48C2-83D9-3B6C307BB25B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Copie_06" ID="{C624B41A-72E5-46C1-8C67-B015FF6F2886}" ShortID="960851882">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Copie" ID="{0980CBEE-23EF-4006-8D9A-1F081278FB5E}" ShortID="92085157">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.138030772227125"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.13770818320512"/>
+										<Property Name="TrimBegin" Type="Real64" Value="3.21901877617113"/>
+										<Property Name="TrimEnd" Type="Real64" Value="7.48764654948563"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Copie.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Copie" ID="{0980CBEE-23EF-4006-8D9A-1F081278FB5E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

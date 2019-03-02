@@ -22,11 +22,13 @@
 			<Path>Soundbank_Petri.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3098905827" Name="Play_Color" ObjectPath="\Events\Default Work Unit\Play_Color"/>
+				<Event Id="3231622537" Name="Play_Copy" ObjectPath="\Events\Default Work Unit\Play_Copy"/>
 				<Event Id="4042141136" Name="Play_Drone" ObjectPath="\Events\Default Work Unit\Play_Drone"/>
 				<Event Id="3832207509" Name="Play_Grandir" ObjectPath="\Events\Default Work Unit\Play_Grandir"/>
 				<Event Id="2142332559" Name="Play_Mic_01" ObjectPath="\Events\Default Work Unit\Play_Mic_01"/>
 				<Event Id="2142332556" Name="Play_Mic_02" ObjectPath="\Events\Default Work Unit\Play_Mic_02"/>
 				<Event Id="2142332557" Name="Play_Mic_03" ObjectPath="\Events\Default Work Unit\Play_Mic_03"/>
+				<Event Id="2142332554" Name="Play_Mic_04" ObjectPath="\Events\Default Work Unit\Play_Mic_04"/>
 				<Event Id="2539556056" Name="Play_Morphing" ObjectPath="\Events\Default Work Unit\Play_Morphing"/>
 				<Event Id="410230462" Name="Stop_Drone" ObjectPath="\Events\Default Work Unit\Stop_Drone"/>
 			</IncludedEvents>
@@ -42,6 +44,10 @@
 				<File Id="46748538" Language="SFX">
 					<ShortName>Mic 02.wav</ShortName>
 					<Path>SFX\Mic 02_01E6889B.wem</Path>
+				</File>
+				<File Id="92085157" Language="SFX">
+					<ShortName>Copie.wav</ShortName>
+					<Path>SFX\Copie_D6566F77.wem</Path>
 				</File>
 				<File Id="107602187" Language="SFX">
 					<ShortName>End amb.wav</ShortName>
@@ -59,9 +65,17 @@
 					<ShortName>Mic 02.wav</ShortName>
 					<Path>SFX\Mic 02_B0134ED0.wem</Path>
 				</File>
+				<File Id="215443678" Language="SFX">
+					<ShortName>Mic 4.wav</ShortName>
+					<Path>SFX\Mic 4_368584D9.wem</Path>
+				</File>
 				<File Id="216042356" Language="SFX">
 					<ShortName>Mic 02.wav</ShortName>
 					<Path>SFX\Mic 02_F71D6EC5.wem</Path>
+				</File>
+				<File Id="217226874" Language="SFX">
+					<ShortName>Copie.wav</ShortName>
+					<Path>SFX\Copie_DE8E99C1.wem</Path>
 				</File>
 				<File Id="218985002" Language="SFX">
 					<ShortName>Microbe sound.wav</ShortName>
@@ -79,6 +93,10 @@
 					<ShortName>End amb 2.wav</ShortName>
 					<Path>SFX\End amb 2_8956FC97.wem</Path>
 				</File>
+				<File Id="288521048" Language="SFX">
+					<ShortName>Mic 4.wav</ShortName>
+					<Path>SFX\Mic 4_A4FCBD6D.wem</Path>
+				</File>
 				<File Id="379314154" Language="SFX">
 					<ShortName>pub federer.wav</ShortName>
 					<Path>SFX\pub federer_37526D37.wem</Path>
@@ -91,9 +109,21 @@
 					<ShortName>Morphing.wav</ShortName>
 					<Path>SFX\Morphing_18330B89.wem</Path>
 				</File>
+				<File Id="445523666" Language="SFX">
+					<ShortName>Mic 4.wav</ShortName>
+					<Path>SFX\Mic 4_4394A2D9.wem</Path>
+				</File>
 				<File Id="454015772" Language="SFX">
 					<ShortName>Morphing.wav</ShortName>
 					<Path>SFX\Morphing_A4B1C630.wem</Path>
+				</File>
+				<File Id="458317941" Language="SFX">
+					<ShortName>Mic 4.wav</ShortName>
+					<Path>SFX\Mic 4_E2B73475.wem</Path>
+				</File>
+				<File Id="458583607" Language="SFX">
+					<ShortName>Copie.wav</ShortName>
+					<Path>SFX\Copie_8B109576.wem</Path>
 				</File>
 				<File Id="485471512" Language="SFX">
 					<ShortName>pub federer.wav</ShortName>
@@ -107,6 +137,10 @@
 					<ShortName>Microbe sound.wav</ShortName>
 					<Path>SFX\Microbe sound_9AD0D893.wem</Path>
 				</File>
+				<File Id="693015723" Language="SFX">
+					<ShortName>Copie.wav</ShortName>
+					<Path>SFX\Copie_02B38595.wem</Path>
+				</File>
 				<File Id="694058528" Language="SFX">
 					<ShortName>Microbe sound.wav</ShortName>
 					<Path>SFX\Microbe sound_14AD1D85.wem</Path>
@@ -115,9 +149,21 @@
 					<ShortName>Grandir.wav</ShortName>
 					<Path>SFX\Grandir_F0CA6488.wem</Path>
 				</File>
+				<File Id="797106925" Language="SFX">
+					<ShortName>Copie.wav</ShortName>
+					<Path>SFX\Copie_1BE5C558.wem</Path>
+				</File>
+				<File Id="813329047" Language="SFX">
+					<ShortName>Mic 4.wav</ShortName>
+					<Path>SFX\Mic 4_53925744.wem</Path>
+				</File>
 				<File Id="859379981" Language="SFX">
 					<ShortName>Microbe sound.wav</ShortName>
 					<Path>SFX\Microbe sound_C9891287.wem</Path>
+				</File>
+				<File Id="879931658" Language="SFX">
+					<ShortName>Mic 4.wav</ShortName>
+					<Path>SFX\Mic 4_B355DE7D.wem</Path>
 				</File>
 				<File Id="916323195" Language="SFX">
 					<ShortName>Microbe sound.wav</ShortName>
@@ -134,6 +180,14 @@
 				<File Id="957396463" Language="SFX">
 					<ShortName>Drone 1 Loop.wav</ShortName>
 					<Path>SFX\Drone 1 Loop_8956FC97.wem</Path>
+				</File>
+				<File Id="1027944170" Language="SFX">
+					<ShortName>Copie.wav</ShortName>
+					<Path>SFX\Copie_06CDCCC5.wem</Path>
+				</File>
+				<File Id="1043447749" Language="SFX">
+					<ShortName>Copie.wav</ShortName>
+					<Path>SFX\Copie_2EECBDCA.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
