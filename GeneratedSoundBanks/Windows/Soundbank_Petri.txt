@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	410230462	Stop_Drone			\Default Work Unit\Stop_Drone	
 	2142332554	Play_Mic_04			\Default Work Unit\Play_Mic_04	
+	2142332555	Play_Mic_05			\Default Work Unit\Play_Mic_05	
 	2142332556	Play_Mic_02			\Default Work Unit\Play_Mic_02	
 	2142332557	Play_Mic_03			\Default Work Unit\Play_Mic_03	
 	2142332559	Play_Mic_01			\Default Work Unit\Play_Mic_01	
@@ -24,6 +25,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	92085157	Copie_06	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Copie_5E978E7A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Copying\Copie_06		819640
 	107602187	End amb	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\End amb_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch_Amb\End_Drone\End amb\End amb		1908544
 	118297304	Morphing	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Morphing_3C434F78.wem		\Actor-Mixer Hierarchy\Default Work Unit\Morphing\Morphing		686676
+	186553553	Mic 5_04	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\train_14DE411B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_05\Mic 5_04		468412
 	198632130	Morphing_02	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Morphing_68A90358.wem		\Actor-Mixer Hierarchy\Default Work Unit\Morphing\Morphing_02		616900
 	209841446	Mic 02_02	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Mic 02_399AA32E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_02\Mic 02_02		669640
 	215443678	Mic 4_04	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Mic 4_EEF9C1A1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_04\Mic 4_04		827224
@@ -31,6 +33,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	217226874	Copie_02	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Copie_8290E84E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Copying\Copie_02		1261564
 	218985002	Microbe_sound_01	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Microbe sound_93748D43.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_01\Microbe_sound_01		934188
 	242080259	Mic 02_01	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Mic 02_28802852.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_02\Mic 02_01		716316
+	245514589	Mic 5_01	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\train_054284A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_05\Mic 5_01		376800
 	270775224	Morphing_03	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Morphing_3B956AB4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Morphing\Morphing_03		683592
 	286046264	End amb 2	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\End amb 2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch_Amb\End_Drone\End amb 2\End amb 2		2905280
 	288521048	Mic 4_05	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Mic 4_211938B3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_04\Mic 4_05		753868
@@ -43,10 +46,14 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	458583607	Copie_04	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Copie_37B17C0B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Copying\Copie_04		931944
 	485471512	Mic 03_03	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\pub federer_1B7FE4EF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_03\Mic 03_03		453460
 	496472055	Microbe_sound_02	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Microbe sound_3CE116FC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_01\Microbe_sound_02		887260
+	511333399	Mic 5_03	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\train_E2EE9672.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_05\Mic 5_03		581688
+	537177264	Mic 5	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\train_E657A57A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_05\Mic 5		369228
 	555982911	Microbe_sound_00	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Microbe sound_0750663B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_01\Microbe_sound_00		933464
+	597927652	Mic 5_05	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\train_2E9B7642.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_05\Mic 5_05		475896
 	693015723	Copie	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Copie_A7451920.wem		\Actor-Mixer Hierarchy\Default Work Unit\Copying\Copie		896460
 	694058528	Microbe_sound_04	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Microbe sound_6A78B825.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_01\Microbe_sound_04		812756
 	743934107	Grandir	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Grandir_0307E15B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Grandir		3936304
+	747100165	Mic 5_02	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\train_E21EC377.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_05\Mic 5_02		460252
 	797106925	Copie_05	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Copie_75566057.wem		\Actor-Mixer Hierarchy\Default Work Unit\Copying\Copie_05		876760
 	813329047	Mic 4_01	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Mic 4_270D5D57.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_04\Mic 4_01		934988
 	859379981	Microbe_sound_05	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Microbe sound_C357345E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_01\Microbe_sound_05		649240

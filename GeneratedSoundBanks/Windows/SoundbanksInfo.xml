@@ -29,6 +29,7 @@
 				<Event Id="2142332556" Name="Play_Mic_02" ObjectPath="\Events\Default Work Unit\Play_Mic_02"/>
 				<Event Id="2142332557" Name="Play_Mic_03" ObjectPath="\Events\Default Work Unit\Play_Mic_03"/>
 				<Event Id="2142332554" Name="Play_Mic_04" ObjectPath="\Events\Default Work Unit\Play_Mic_04"/>
+				<Event Id="2142332555" Name="Play_Mic_05" ObjectPath="\Events\Default Work Unit\Play_Mic_05"/>
 				<Event Id="2539556056" Name="Play_Morphing" ObjectPath="\Events\Default Work Unit\Play_Morphing"/>
 				<Event Id="410230462" Name="Stop_Drone" ObjectPath="\Events\Default Work Unit\Stop_Drone"/>
 			</IncludedEvents>
@@ -57,6 +58,10 @@
 					<ShortName>Morphing.wav</ShortName>
 					<Path>SFX\Morphing_3C434F78.wem</Path>
 				</File>
+				<File Id="186553553" Language="SFX">
+					<ShortName>train.wav</ShortName>
+					<Path>SFX\train_14DE411B.wem</Path>
+				</File>
 				<File Id="198632130" Language="SFX">
 					<ShortName>Morphing.wav</ShortName>
 					<Path>SFX\Morphing_68A90358.wem</Path>
@@ -84,6 +89,10 @@
 				<File Id="242080259" Language="SFX">
 					<ShortName>Mic 02.wav</ShortName>
 					<Path>SFX\Mic 02_28802852.wem</Path>
+				</File>
+				<File Id="245514589" Language="SFX">
+					<ShortName>train.wav</ShortName>
+					<Path>SFX\train_054284A6.wem</Path>
 				</File>
 				<File Id="270775224" Language="SFX">
 					<ShortName>Morphing.wav</ShortName>
@@ -133,9 +142,21 @@
 					<ShortName>Microbe sound.wav</ShortName>
 					<Path>SFX\Microbe sound_3CE116FC.wem</Path>
 				</File>
+				<File Id="511333399" Language="SFX">
+					<ShortName>train.wav</ShortName>
+					<Path>SFX\train_E2EE9672.wem</Path>
+				</File>
+				<File Id="537177264" Language="SFX">
+					<ShortName>train.wav</ShortName>
+					<Path>SFX\train_E657A57A.wem</Path>
+				</File>
 				<File Id="555982911" Language="SFX">
 					<ShortName>Microbe sound.wav</ShortName>
 					<Path>SFX\Microbe sound_0750663B.wem</Path>
+				</File>
+				<File Id="597927652" Language="SFX">
+					<ShortName>train.wav</ShortName>
+					<Path>SFX\train_2E9B7642.wem</Path>
 				</File>
 				<File Id="693015723" Language="SFX">
 					<ShortName>Copie.wav</ShortName>
@@ -148,6 +169,10 @@
 				<File Id="743934107" Language="SFX">
 					<ShortName>Grandir.wav</ShortName>
 					<Path>SFX\Grandir_0307E15B.wem</Path>
+				</File>
+				<File Id="747100165" Language="SFX">
+					<ShortName>train.wav</ShortName>
+					<Path>SFX\train_E21EC377.wem</Path>
 				</File>
 				<File Id="797106925" Language="SFX">
 					<ShortName>Copie.wav</ShortName>
