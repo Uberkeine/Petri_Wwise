@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="89">
-	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1551554157" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1551557734" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Actor-Mixer Hierarchy\Factory Crankcase REV.wwu" DateLow="1544714793" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Actor-Mixer Hierarchy\Factory Motion.wwu" DateLow="1551525623" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1544714450" DateHigh="0"/>
@@ -27,7 +27,7 @@
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1544714461" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Effects\Factory McDSP Effects.wwu" DateLow="1544714458" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Events\Default Work Unit.wwu" DateLow="1551554234" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Game Parameters\Default Work Unit.wwu" DateLow="1551545996" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Game Parameters\Default Work Unit.wwu" DateLow="1551557734" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Game Parameters\Factory Motion.wwu" DateLow="1544714443" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1544714450" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Game Parameters\Factory SoundSeed Grain.wwu" DateLow="1544714483" DateHigh="0"/>
@@ -35,13 +35,13 @@
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1551525623" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Mixing Sessions\Default Work Unit.wwu" DateLow="1551525587" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Modulators\Default Work Unit.wwu" DateLow="1551525587" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Petri.Louis.NAUDIN.wsettings" DateLow="1551554840" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Petri.Louis.NAUDIN.wsettings" DateLow="1551559289" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Petri.wproj" DateLow="1551525587" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Presets\Default Work Unit.wwu" DateLow="1551525587" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Queries\Default Work Unit.wwu" DateLow="1551525587" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Queries\Factory Queries.wwu" DateLow="1544714443" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\SoundBanks\Default Work Unit.wwu" DateLow="1551554248" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1551554234" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1551557734" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\States\Default Work Unit.wwu" DateLow="1551528399" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Switches\Default Work Unit.wwu" DateLow="1551528399" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\louis.naudin\Documents\Petri\Triggers\Default Work Unit.wwu" DateLow="1551525587" DateHigh="0"/>

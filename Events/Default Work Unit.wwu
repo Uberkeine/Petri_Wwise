@@ -143,6 +143,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Mic_05" ID="{C7596287-ACCA-4E14-A112-B63FD2ABF6BA}">
+					<ChildrenList>
+						<Action Name="" ID="{9194E54A-70A7-4AD4-ADC4-A1CA1E211111}" ShortID="520251692">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Microbe_05" ID="{1EAB99E7-A197-4358-A68D-5490393DADCD}" WorkUnitID="{732BD922-C584-487D-9DF2-893CE835A401}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

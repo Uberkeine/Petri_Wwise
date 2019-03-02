@@ -53,28 +53,6 @@
 						<ActiveSource Name="kick fx" ID="{1AC065A6-2348-4D6C-A5CD-91C9E981FDF7}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Mic 5" ID="{47928EA6-DBAB-4922-85A1-F6E12082F62F}" ShortID="79558901">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="train" ID="{9B7D13E7-5E27-4790-8AC9-CFC40829F1D5}" ShortID="537177264">
-							<PropertyList>
-								<Property Name="TrimEnd" Type="Real64" Value="27.8834355828221"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>train.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="train" ID="{9B7D13E7-5E27-4790-8AC9-CFC40829F1D5}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<RandomSequenceContainer Name="Microbe_01" ID="{83FC3D3F-5FB6-4FE1-A1F9-9D4A85CF76F5}" ShortID="285931182">
 					<PropertyList>
 						<Property Name="Highpass" Type="int16">
@@ -1529,6 +1507,236 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Copie" ID="{0980CBEE-23EF-4006-8D9A-1F081278FB5E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Microbe_05" ID="{1EAB99E7-A197-4358-A68D-5490393DADCD}" ShortID="786294009">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>15</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6FD20019-9445-40AA-9AA2-D02E0DFC80CD}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="76"/>
+											<Property Name="Min" Type="Real64" Value="-51"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Mic 5" ID="{47928EA6-DBAB-4922-85A1-F6E12082F62F}" ShortID="79558901">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="train" ID="{9B7D13E7-5E27-4790-8AC9-CFC40829F1D5}" ShortID="537177264">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="7.87699765204879E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.19799612642148"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.41104294478528"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.33376613540214"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>train.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="train" ID="{9B7D13E7-5E27-4790-8AC9-CFC40829F1D5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 5_01" ID="{1B7A4D2D-9A36-4048-906C-99D1620B9C04}" ShortID="814794180">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="train" ID="{21A03BF4-D361-4E3D-B7B8-A965303404B8}" ShortID="245514589">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="7.87699765204879E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.19799612642148"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.46158340636869"/>
+										<Property Name="TrimEnd" Type="Real64" Value="7.42374568550439"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>train.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="train" ID="{21A03BF4-D361-4E3D-B7B8-A965303404B8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 5_02" ID="{433B85D7-8FE2-47DF-BE6E-5FD72B3A6416}" ShortID="819404573">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="train" ID="{921221CE-53BB-4A2E-944C-E70CA69AB1B6}" ShortID="747100165">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="7.87699765204879E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.19799612642148"/>
+										<Property Name="TrimBegin" Type="Real64" Value="8.5493556659201"/>
+										<Property Name="TrimEnd" Type="Real64" Value="10.9461594226421"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>train.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="train" ID="{921221CE-53BB-4A2E-944C-E70CA69AB1B6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 5_03" ID="{BC403CC3-50D4-4792-B6D5-3178A2CC1916}" ShortID="791461172">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="train" ID="{875D2B2B-C343-4721-B2D2-C1DBEA717DC0}" ShortID="511333399">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="7.87699765204879E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.19799612642148"/>
+										<Property Name="TrimBegin" Type="Real64" Value="11.54526568637"/>
+										<Property Name="TrimEnd" Type="Real64" Value="14.5745555663757"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>train.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="train" ID="{875D2B2B-C343-4721-B2D2-C1DBEA717DC0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 5_04" ID="{01063355-4CA4-4A37-A056-2A183619878C}" ShortID="44601031">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="train" ID="{003FDFDB-C5BE-4F17-8BDC-AC8141BFB974}" ShortID="186553553">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="7.87699765204879E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.19799612642148"/>
+										<Property Name="TrimBegin" Type="Real64" Value="14.9081377608985"/>
+										<Property Name="TrimEnd" Type="Real64" Value="17.3474643208795"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>train.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="train" ID="{003FDFDB-C5BE-4F17-8BDC-AC8141BFB974}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 5_05" ID="{94E4CA38-2B61-4BD1-AAA6-3940F5078D0F}" ShortID="540732898">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="train" ID="{5D3E10EA-1AF7-4139-90BF-B527F14279DA}" ShortID="597927652">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="7.87699765204879E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.19799612642148"/>
+										<Property Name="TrimBegin" Type="Real64" Value="21.6648813581329"/>
+										<Property Name="TrimEnd" Type="Real64" Value="24.1431601043053"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>train.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="train" ID="{5D3E10EA-1AF7-4139-90BF-B527F14279DA}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

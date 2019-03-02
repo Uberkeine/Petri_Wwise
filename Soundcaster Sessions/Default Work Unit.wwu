@@ -10,6 +10,10 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Mic_05" ID="{C7596287-ACCA-4E14-A112-B63FD2ABF6BA}" WorkUnitID="{A6C78077-5A9B-4A4A-8D05-F6635E00C931}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Mic_01" ID="{E768D18F-7372-4074-AE0C-8F761610589E}" WorkUnitID="{A6C78077-5A9B-4A4A-8D05-F6635E00C931}"/>
 							<Position X="1" Y="0"/>
 						</Module>
