@@ -4,8 +4,10 @@
 		<UserProjectSettings Name="" ID="{0FBED1ED-473C-4447-98E7-82B6DD920DED}">
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\louis.naudin\Desktop\Sons Petri"/>
+				<Property Name="Event Action List\{26597279-CFB9-4511-953B-A012D29D1A83}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2A2F5421-2AC5-45EB-B35B-D4D665448C92}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{45F56F12-0C36-4E4F-B7EF-D7D546ED99CD}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{66630136-081B-48F9-9F09-49A00E1DE06A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{815AFE97-4F89-4756-90CC-44B0DF04DE17}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D0395219-F865-44AB-8430-A05E7D18003E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E768D18F-7372-4074-AE0C-8F761610589E}\x64_Expand States" Type="string" Value=""/>
@@ -28,6 +30,7 @@
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="Interactive Music\x64_{0A35ED95-D4B5-485C-A789-8D9E05050C1B} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP1wYhmEYnhBAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{5BAFEFE6-CB25-4F7B-A59C-182959D3C568} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP77uadCCYkxAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{9FD4160C-1E6E-4353-B2A8-482A6406E4D3} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA+D8AAAAAAADwP2AW1nvdxEFAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{A84F5B2A-EE66-4B55-B296-045E71C3C416} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP37Mo+LImlVAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{CE96618F-826C-4F2F-9F2A-7087BDBC94AB} - SegmentEditorZoomInfo" Type="string" Value="mpmZmZmZuT8AAAAAAADwPwAAAAAA2GpAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{E881B3A4-6D85-44DC-A90D-CE7DEF45241E} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP1wYhmEYnhBAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
@@ -41,6 +44,7 @@
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="6"/>
 				<Property Name="MonitoringManager\WatchMgr\x64_GameSyncWatches" Type="string" Value=""/>
 				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value=""/>
+				<Property Name="Music Transition List\{09B414E0-CA1B-4712-91B1-EC8E43D964D7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{38CA9015-141F-4E14-ADBB-14BA10EAC91F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{7F831103-F72D-46CD-9489-31402F61298F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{9CA10E8F-285B-4A5F-9EEC-B9D07EE26F59}\x64_Expand States" Type="string" Value=""/>

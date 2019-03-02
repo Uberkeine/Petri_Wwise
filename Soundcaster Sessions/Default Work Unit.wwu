@@ -18,8 +18,16 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Morphing" ID="{815AFE97-4F89-4756-90CC-44B0DF04DE17}" WorkUnitID="{A6C78077-5A9B-4A4A-8D05-F6635E00C931}"/>
+							<ObjectRef Name="Play_Mic_03" ID="{66630136-081B-48F9-9F09-49A00E1DE06A}" WorkUnitID="{A6C78077-5A9B-4A4A-8D05-F6635E00C931}"/>
 							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Morphing" ID="{815AFE97-4F89-4756-90CC-44B0DF04DE17}" WorkUnitID="{A6C78077-5A9B-4A4A-8D05-F6635E00C931}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Color" ID="{26597279-CFB9-4511-953B-A012D29D1A83}" WorkUnitID="{A6C78077-5A9B-4A4A-8D05-F6635E00C931}"/>
+							<Position X="2" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -44,6 +52,10 @@
 							<Value>6</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="LoPass_Grandir" ID="{2DE43660-BC42-44C0-991B-10C3D50D4242}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="RPM" ID="{9112AA05-F577-44FD-9F4E-4424158129E6}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -58,6 +70,10 @@
 						<RTPCValue>
 							<GameParameterRef Name="Instrument_FA_SSGrain" ID="{6279AF44-C082-4608-981E-9A63D1EE7555}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Volume_Grandir" ID="{06E317C6-F3BA-4621-97D2-6E0E6EDC670F}"/>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>

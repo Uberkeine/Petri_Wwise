@@ -21,22 +21,83 @@
 			<ShortName>Soundbank_Petri</ShortName>
 			<Path>Soundbank_Petri.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3098905827" Name="Play_Color" ObjectPath="\Events\Default Work Unit\Play_Color"/>
 				<Event Id="4042141136" Name="Play_Drone" ObjectPath="\Events\Default Work Unit\Play_Drone"/>
-				<Event Id="1635495179" Name="Play_Mic_1" ObjectPath="\Events\Default Work Unit\Play_Mic_1"/>
+				<Event Id="3832207509" Name="Play_Grandir" ObjectPath="\Events\Default Work Unit\Play_Grandir"/>
+				<Event Id="2142332559" Name="Play_Mic_01" ObjectPath="\Events\Default Work Unit\Play_Mic_01"/>
+				<Event Id="2142332556" Name="Play_Mic_02" ObjectPath="\Events\Default Work Unit\Play_Mic_02"/>
+				<Event Id="2142332557" Name="Play_Mic_03" ObjectPath="\Events\Default Work Unit\Play_Mic_03"/>
+				<Event Id="2539556056" Name="Play_Morphing" ObjectPath="\Events\Default Work Unit\Play_Morphing"/>
 				<Event Id="410230462" Name="Stop_Drone" ObjectPath="\Events\Default Work Unit\Stop_Drone"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="15013037" Language="SFX">
+					<ShortName>Bell fx.wav</ShortName>
+					<Path>SFX\Bell fx_1DBEC092.wem</Path>
+				</File>
+				<File Id="26621033" Language="SFX">
+					<ShortName>pub federer.wav</ShortName>
+					<Path>SFX\pub federer_ED02FCA8.wem</Path>
+				</File>
+				<File Id="46748538" Language="SFX">
+					<ShortName>Mic 02.wav</ShortName>
+					<Path>SFX\Mic 02_01E6889B.wem</Path>
+				</File>
 				<File Id="107602187" Language="SFX">
 					<ShortName>End amb.wav</ShortName>
 					<Path>SFX\End amb_8956FC97.wem</Path>
+				</File>
+				<File Id="118297304" Language="SFX">
+					<ShortName>Morphing.wav</ShortName>
+					<Path>SFX\Morphing_74BBC47E.wem</Path>
+				</File>
+				<File Id="198632130" Language="SFX">
+					<ShortName>Morphing.wav</ShortName>
+					<Path>SFX\Morphing_87D47320.wem</Path>
+				</File>
+				<File Id="209841446" Language="SFX">
+					<ShortName>Mic 02.wav</ShortName>
+					<Path>SFX\Mic 02_B0134ED0.wem</Path>
+				</File>
+				<File Id="216042356" Language="SFX">
+					<ShortName>Mic 02.wav</ShortName>
+					<Path>SFX\Mic 02_F71D6EC5.wem</Path>
 				</File>
 				<File Id="218985002" Language="SFX">
 					<ShortName>Microbe sound.wav</ShortName>
 					<Path>SFX\Microbe sound_B0F64A25.wem</Path>
 				</File>
+				<File Id="242080259" Language="SFX">
+					<ShortName>Mic 02.wav</ShortName>
+					<Path>SFX\Mic 02_0F4F7B08.wem</Path>
+				</File>
+				<File Id="270775224" Language="SFX">
+					<ShortName>Morphing.wav</ShortName>
+					<Path>SFX\Morphing_39FF5753.wem</Path>
+				</File>
 				<File Id="286046264" Language="SFX">
 					<ShortName>End amb 2.wav</ShortName>
 					<Path>SFX\End amb 2_8956FC97.wem</Path>
+				</File>
+				<File Id="379314154" Language="SFX">
+					<ShortName>pub federer.wav</ShortName>
+					<Path>SFX\pub federer_37526D37.wem</Path>
+				</File>
+				<File Id="434567682" Language="SFX">
+					<ShortName>pub federer.wav</ShortName>
+					<Path>SFX\pub federer_2392C6F2.wem</Path>
+				</File>
+				<File Id="438207169" Language="SFX">
+					<ShortName>Morphing.wav</ShortName>
+					<Path>SFX\Morphing_18330B89.wem</Path>
+				</File>
+				<File Id="454015772" Language="SFX">
+					<ShortName>Morphing.wav</ShortName>
+					<Path>SFX\Morphing_A4B1C630.wem</Path>
+				</File>
+				<File Id="485471512" Language="SFX">
+					<ShortName>pub federer.wav</ShortName>
+					<Path>SFX\pub federer_5F5B8F01.wem</Path>
 				</File>
 				<File Id="496472055" Language="SFX">
 					<ShortName>Microbe sound.wav</ShortName>
@@ -50,6 +111,10 @@
 					<ShortName>Microbe sound.wav</ShortName>
 					<Path>SFX\Microbe sound_14AD1D85.wem</Path>
 				</File>
+				<File Id="743934107" Language="SFX">
+					<ShortName>Grandir.wav</ShortName>
+					<Path>SFX\Grandir_F0CA6488.wem</Path>
+				</File>
 				<File Id="859379981" Language="SFX">
 					<ShortName>Microbe sound.wav</ShortName>
 					<Path>SFX\Microbe sound_C9891287.wem</Path>
@@ -57,6 +122,14 @@
 				<File Id="916323195" Language="SFX">
 					<ShortName>Microbe sound.wav</ShortName>
 					<Path>SFX\Microbe sound_78DCF02C.wem</Path>
+				</File>
+				<File Id="919081960" Language="SFX">
+					<ShortName>Mic 02.wav</ShortName>
+					<Path>SFX\Mic 02_9D639E22.wem</Path>
+				</File>
+				<File Id="926670565" Language="SFX">
+					<ShortName>pub federer.wav</ShortName>
+					<Path>SFX\pub federer_3E3DA7A8.wem</Path>
 				</File>
 				<File Id="957396463" Language="SFX">
 					<ShortName>Drone 1 Loop.wav</ShortName>

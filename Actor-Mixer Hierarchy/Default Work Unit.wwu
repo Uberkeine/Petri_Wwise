@@ -3,31 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{732BD922-C584-487D-9DF2-893CE835A401}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Bell fx" ID="{89E08025-968E-4F4E-8242-DC999B0AA9B3}" ShortID="317672064">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Bell fx" ID="{EB20DE3C-15D2-419B-88C6-A7686D3C56AA}" ShortID="15013037">
-							<PropertyList>
-								<Property Name="FadeInDuration" Type="Real64" Value="6.27432077125327E-02"/>
-								<Property Name="FadeOutDuration" Type="Real64" Value="2.2964014022787"/>
-								<Property Name="TrimBegin" Type="Real64" Value="7.93074145486415"/>
-								<Property Name="TrimEnd" Type="Real64" Value="12.0341472392638"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>Bell fx.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Bell fx" ID="{EB20DE3C-15D2-419B-88C6-A7686D3C56AA}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Drum fx" ID="{552AB94E-01D7-46D2-87B6-F92CACD44942}" ShortID="416628716">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -104,7 +79,7 @@
 					<PropertyList>
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
-								<Value>8</Value>
+								<Value>15</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Pitch" Type="int32">
@@ -121,6 +96,11 @@
 							</ModifierList>
 						</Property>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -390,7 +370,7 @@
 					<PropertyList>
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
-								<Value>8</Value>
+								<Value>16</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Pitch" Type="int32">
@@ -399,8 +379,8 @@
 									<Modifier Name="" ID="{5118DD75-7DBA-4E05-B84E-174E6B5716AC}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="51"/>
-											<Property Name="Min" Type="Real64" Value="-51"/>
+											<Property Name="Max" Type="Real64" Value="76"/>
+											<Property Name="Min" Type="Real64" Value="-76"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -454,7 +434,7 @@
 					<PropertyList>
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
-								<Value>35</Value>
+								<Value>15</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Lowpass" Type="int16">
@@ -464,13 +444,24 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-6</Value>
+								<Value>-9</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise Delay (Custom)" ID="{C8027EBF-F368-48A9-A8A7-7AF2D72288E0}" ShortID="841123199" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+									<PropertyList>
+										<Property Name="DelayTime" Type="Real32" Value="0.26"/>
+										<Property Name="Feedback" Type="Real32" Value="30.5"/>
+										<Property Name="WetDryMix" Type="Real32" Value="19"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
@@ -489,10 +480,10 @@
 							<ChildrenList>
 								<AudioFileSource Name="Mic 02" ID="{4CF4DE5F-5FCC-4706-A8B1-BC30754CB54E}" ShortID="46748538">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="2.21127990391794E-02"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="6.47004120035251E-02"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="3.70665793894245"/>
-										<Property Name="TrimBegin" Type="Real64" Value="1.9321058160483"/>
-										<Property Name="TrimEnd" Type="Real64" Value="7.48794657464213"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.01564305686298"/>
+										<Property Name="TrimEnd" Type="Real64" Value="7.26681858425034"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Mic 02.wav</AudioFile>
@@ -516,7 +507,7 @@
 									<PropertyList>
 										<Property Name="FadeInDuration" Type="Real64" Value="0.044225598078359"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="2.13941330704061"/>
-										<Property Name="TrimBegin" Type="Real64" Value="8.43603283344695"/>
+										<Property Name="TrimBegin" Type="Real64" Value="8.48408039679133"/>
 										<Property Name="TrimEnd" Type="Real64" Value="12.2145573692667"/>
 									</PropertyList>
 									<Language>SFX</Language>
@@ -541,7 +532,7 @@
 									<PropertyList>
 										<Property Name="FadeInDuration" Type="Real64" Value="0.044225598078359"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="2.13941330704061"/>
-										<Property Name="TrimBegin" Type="Real64" Value="13.4107983728446"/>
+										<Property Name="TrimBegin" Type="Real64" Value="13.4206262835286"/>
 										<Property Name="TrimEnd" Type="Real64" Value="16.9079989653326"/>
 									</PropertyList>
 									<Language>SFX</Language>
@@ -564,9 +555,9 @@
 							<ChildrenList>
 								<AudioFileSource Name="Mic 02" ID="{33C36E59-098A-4AC0-82A7-5DA3F0707682}" ShortID="216042356">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.044225598078359"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="5.40535087624325E-02"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="2.13941330704061"/>
-										<Property Name="TrimBegin" Type="Real64" Value="18.6797869883468"/>
+										<Property Name="TrimBegin" Type="Real64" Value="18.7387544524513"/>
 										<Property Name="TrimEnd" Type="Real64" Value="22.8084308422869"/>
 									</PropertyList>
 									<Language>SFX</Language>
@@ -796,6 +787,320 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Microbe_03" ID="{2B57DD4E-AEE0-45FF-A825-F5CBFFDE0C04}" ShortID="199096969">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>15</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D45E2714-B17D-4AE9-8FA9-B40AECA4B767}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="76"/>
+											<Property Name="Min" Type="Real64" Value="-76"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Mic 03" ID="{6714EA59-C374-4D5C-A6F1-574EFFD96B8B}" ShortID="236201473">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pub federer" ID="{83F8218A-75B9-4DB5-8C9B-E57C2E041E2D}" ShortID="926670565">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.81973513314884E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.4151947284708"/>
+										<Property Name="TrimBegin" Type="Real64" Value="18.3244823595086"/>
+										<Property Name="TrimEnd" Type="Real64" Value="21.0123883965765"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>pub federer.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pub federer" ID="{83F8218A-75B9-4DB5-8C9B-E57C2E041E2D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 03_01" ID="{5247EF4B-836B-483C-BA68-BE9C6D8850B0}" ShortID="536649845">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pub federer" ID="{E29119E1-B126-463C-B446-CB3611B938C9}" ShortID="26621033">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.81973513314884E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.4151947284708"/>
+										<Property Name="TrimBegin" Type="Real64" Value="22.5063556711297"/>
+										<Property Name="TrimEnd" Type="Real64" Value="25.2132394152844"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>pub federer.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pub federer" ID="{E29119E1-B126-463C-B446-CB3611B938C9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 03_02" ID="{277C39B9-8289-40F3-99E0-CD570DC3C2AA}" ShortID="179322270">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pub federer" ID="{18FDD7F0-BF3A-47FE-8C2C-36EA25736992}" ShortID="379314154">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.81973513314884E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.4151947284708"/>
+										<Property Name="TrimBegin" Type="Real64" Value="26.1371977019813"/>
+										<Property Name="TrimEnd" Type="Real64" Value="28.6149934105885"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>pub federer.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pub federer" ID="{18FDD7F0-BF3A-47FE-8C2C-36EA25736992}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 03_03" ID="{78AC70A2-8769-4AF7-8BA9-898EC2AF36CE}" ShortID="422002328">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pub federer" ID="{6EBE7C24-8513-45AE-96E7-23C3947628DA}" ShortID="485471512">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.81973513314884E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.4151947284708"/>
+										<Property Name="TrimBegin" Type="Real64" Value="29.4067855229311"/>
+										<Property Name="TrimEnd" Type="Real64" Value="31.7682298130896"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>pub federer.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pub federer" ID="{6EBE7C24-8513-45AE-96E7-23C3947628DA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 03_04" ID="{1F1ED2DE-353B-4430-8AA4-BAD7657B9DDF}" ShortID="1002550750">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pub federer" ID="{59A740E5-EE75-4C90-898A-88EFAA3EB479}" ShortID="434567682">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.81973513314884E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.4151947284708"/>
+										<Property Name="TrimBegin" Type="Real64" Value="36.0679607103884"/>
+										<Property Name="TrimEnd" Type="Real64" Value="38.8625033872773"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>pub federer.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pub federer" ID="{59A740E5-EE75-4C90-898A-88EFAA3EB479}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Color" ID="{E44F846C-B58C-4D70-AF1A-A62562B81506}" ShortID="900516733">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>15</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1E225F36-E45B-4E71-8692-48582E1F0358}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="126"/>
+											<Property Name="Min" Type="Real64" Value="-51"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Bell fx" ID="{89E08025-968E-4F4E-8242-DC999B0AA9B3}" ShortID="317672064">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Bell fx" ID="{EB20DE3C-15D2-419B-88C6-A7686D3C56AA}" ShortID="15013037">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="6.27432077125327E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.2964014022787"/>
+										<Property Name="TrimBegin" Type="Real64" Value="7.93074145486415"/>
+										<Property Name="TrimEnd" Type="Real64" Value="12.0341472392638"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Bell fx.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Bell fx" ID="{EB20DE3C-15D2-419B-88C6-A7686D3C56AA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="Grandir" ID="{AD8112FE-3E4F-43F0-BC57-2DC7EB4DD4CD}" ShortID="888329890">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{D5B70F2C-F360-4E50-A8A2-776C0E6EE37D}" ShortID="289933815">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="LoPass_Grandir" ID="{2DE43660-BC42-44C0-991B-10C3D50D4242}" WorkUnitID="{61CA90F1-4549-43F1-8E98-13AC98F26842}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{126D6FC2-A7E3-4186-AD8C-A8761EF362C6}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>70</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>49.83713</XPos>
+												<YPos>20</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{5E5A4A8D-4DFC-49D1-BD05-3556CA6FA01E}" ShortID="867374826">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Volume_Grandir" ID="{06E317C6-F3BA-4621-97D2-6E0E6EDC670F}" WorkUnitID="{61CA90F1-4549-43F1-8E98-13AC98F26842}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{6FA90A6F-0F0A-40E1-AD4D-917DF5942DAF}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Grandir" ID="{39C4C03E-6BCE-4AD6-92FC-8CD83E5B1CE8}" ShortID="743934107">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="9.35062810400234E-02"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.701297107800176"/>
+								<Property Name="TrimBegin" Type="Real64" Value="1.05194566170026"/>
+								<Property Name="TrimEnd" Type="Real64" Value="21.5531977797254"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Grandir.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Grandir" ID="{39C4C03E-6BCE-4AD6-92FC-8CD83E5B1CE8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
