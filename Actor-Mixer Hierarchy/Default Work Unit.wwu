@@ -450,6 +450,352 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Microbe_02" ID="{8E1D01DE-AAD1-482E-A915-22CB840BC9B6}" ShortID="984874669">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>35</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>37</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Mic 02" ID="{39C17A3F-13A3-470C-A3B1-D4CC30F80244}" ShortID="26840440">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mic 02" ID="{4CF4DE5F-5FCC-4706-A8B1-BC30754CB54E}" ShortID="46748538">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.21127990391794E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="3.70665793894245"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.9321058160483"/>
+										<Property Name="TrimEnd" Type="Real64" Value="7.48794657464213"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Mic 02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Mic 02" ID="{4CF4DE5F-5FCC-4706-A8B1-BC30754CB54E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 02_01" ID="{633262C8-F39D-4AC0-A29A-FAB8AA18F15A}" ShortID="240796600">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mic 02" ID="{79ED2599-B01A-4F1A-B93D-91801A3750D9}" ShortID="242080259">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.044225598078359"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.13941330704061"/>
+										<Property Name="TrimBegin" Type="Real64" Value="8.43603283344695"/>
+										<Property Name="TrimEnd" Type="Real64" Value="12.2145573692667"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Mic 02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Mic 02" ID="{79ED2599-B01A-4F1A-B93D-91801A3750D9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 02_02" ID="{CC06BBE4-58B3-4195-81F3-898F68573F9A}" ShortID="932781192">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mic 02" ID="{A9F663C5-764F-44AB-8A54-018CFCDB7DE1}" ShortID="209841446">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.044225598078359"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.13941330704061"/>
+										<Property Name="TrimBegin" Type="Real64" Value="13.4107983728446"/>
+										<Property Name="TrimEnd" Type="Real64" Value="16.9079989653326"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Mic 02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Mic 02" ID="{A9F663C5-764F-44AB-8A54-018CFCDB7DE1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 02_03" ID="{BE5B4051-2438-40E6-B091-96EA59B4FF4D}" ShortID="300898219">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mic 02" ID="{33C36E59-098A-4AC0-82A7-5DA3F0707682}" ShortID="216042356">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.044225598078359"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.13941330704061"/>
+										<Property Name="TrimBegin" Type="Real64" Value="18.6797869883468"/>
+										<Property Name="TrimEnd" Type="Real64" Value="22.8084308422869"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Mic 02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Mic 02" ID="{33C36E59-098A-4AC0-82A7-5DA3F0707682}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mic 02_04" ID="{F2A9485A-E8C9-480D-8689-CBE25D5376B2}" ShortID="407032794">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mic 02" ID="{E5828298-1383-4915-9632-20129F02727A}" ShortID="919081960">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.044225598078359"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.13941330704061"/>
+										<Property Name="TrimBegin" Type="Real64" Value="23.6351014545155"/>
+										<Property Name="TrimEnd" Type="Real64" Value="27.3083854467599"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Mic 02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Mic 02" ID="{E5828298-1383-4915-9632-20129F02727A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Morphing" ID="{D21EA3AA-7BED-4E43-91E7-9276F616C729}" ShortID="760683854">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>23</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{32A4AC51-E15F-4BA0-ADBA-694FBE159991}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="51"/>
+											<Property Name="Min" Type="Real64" Value="-76"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Morphing" ID="{67DA0803-E20D-4449-A664-69EF0B43A260}" ShortID="533653427">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Morphing" ID="{131C90F3-3D30-42CD-94E1-6CE67B24543B}" ShortID="118297304">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.85318889966901E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.07422073446511"/>
+										<Property Name="TrimBegin" Type="Real64" Value="4.36678705088353"/>
+										<Property Name="TrimEnd" Type="Real64" Value="7.94289915982297"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Morphing.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Morphing" ID="{131C90F3-3D30-42CD-94E1-6CE67B24543B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Morphing_01" ID="{98F19170-F064-4931-A469-11EBD29C4854}" ShortID="307586729">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Morphing" ID="{BE615F55-102A-449A-A165-33C47AE69280}" ShortID="454015772">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.85318889966901E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.07422073446511"/>
+										<Property Name="TrimBegin" Type="Real64" Value="16.9285918247488"/>
+										<Property Name="TrimEnd" Type="Real64" Value="20.89280570636"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Morphing.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Morphing" ID="{BE615F55-102A-449A-A165-33C47AE69280}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Morphing_02" ID="{CA71F709-0305-4E34-BA53-39348C1EE0E3}" ShortID="974861070">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Morphing" ID="{709BC7B3-187B-4052-ADC2-B25A05D4EBD0}" ShortID="198632130">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.85318889966901E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.07422073446511"/>
+										<Property Name="TrimBegin" Type="Real64" Value="28.9144350139136"/>
+										<Property Name="TrimEnd" Type="Real64" Value="32.1271329777594"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Morphing.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Morphing" ID="{709BC7B3-187B-4052-ADC2-B25A05D4EBD0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Morphing_03" ID="{BFCFC07E-2F71-4A82-AC64-E8EE9D91EC31}" ShortID="731293904">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Morphing" ID="{8623766D-D5AB-4FFF-BFCA-D62F0C5CC437}" ShortID="270775224">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.85318889966901E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.07422073446511"/>
+										<Property Name="TrimBegin" Type="Real64" Value="36.2584866982534"/>
+										<Property Name="TrimEnd" Type="Real64" Value="39.8185173479242"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Morphing.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Morphing" ID="{8623766D-D5AB-4FFF-BFCA-D62F0C5CC437}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Morphing_04" ID="{9AEA2035-D962-4734-B817-CB7B5DDE1446}" ShortID="332936929">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Morphing" ID="{9091DC70-30AE-420A-98DC-31A31852E2EA}" ShortID="438207169">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.85318889966901E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.07422073446511"/>
+										<Property Name="TrimBegin" Type="Real64" Value="41.2635965111086"/>
+										<Property Name="TrimEnd" Type="Real64" Value="44.9761230963471"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Morphing.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Morphing" ID="{9091DC70-30AE-420A-98DC-31A31852E2EA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

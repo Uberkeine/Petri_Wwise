@@ -10,8 +10,16 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Mic_1" ID="{E768D18F-7372-4074-AE0C-8F761610589E}" WorkUnitID="{A6C78077-5A9B-4A4A-8D05-F6635E00C931}"/>
+							<ObjectRef Name="Play_Mic_01" ID="{E768D18F-7372-4074-AE0C-8F761610589E}" WorkUnitID="{A6C78077-5A9B-4A4A-8D05-F6635E00C931}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Mic_02" ID="{D0395219-F865-44AB-8430-A05E7D18003E}" WorkUnitID="{A6C78077-5A9B-4A4A-8D05-F6635E00C931}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Morphing" ID="{815AFE97-4F89-4756-90CC-44B0DF04DE17}" WorkUnitID="{A6C78077-5A9B-4A4A-8D05-F6635E00C931}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -89,7 +97,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="End_AmbInGame" ID="{27FA56A0-E306-4711-A382-AD2FED35FB22}"/>
+						<CurrentStateRef Name="Amb_InGame" ID="{65FF8DA7-2986-4C46-87D9-EF853FDCC8EF}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

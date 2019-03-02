@@ -31,7 +31,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Mic_1" ID="{E768D18F-7372-4074-AE0C-8F761610589E}">
+				<Event Name="Play_Mic_01" ID="{E768D18F-7372-4074-AE0C-8F761610589E}">
 					<ChildrenList>
 						<Action Name="" ID="{23E07BAF-D627-439B-93A8-2B464323A908}" ShortID="531472410">
 							<PropertyList>
@@ -40,6 +40,34 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Microbe_01" ID="{83FC3D3F-5FB6-4FE1-A1F9-9D4A85CF76F5}" WorkUnitID="{732BD922-C584-487D-9DF2-893CE835A401}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Morphing" ID="{815AFE97-4F89-4756-90CC-44B0DF04DE17}">
+					<ChildrenList>
+						<Action Name="" ID="{95E994C4-4151-4950-8CDE-FD06517DA10E}" ShortID="340799996">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Morphing" ID="{D21EA3AA-7BED-4E43-91E7-9276F616C729}" WorkUnitID="{732BD922-C584-487D-9DF2-893CE835A401}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Mic_02" ID="{D0395219-F865-44AB-8430-A05E7D18003E}">
+					<ChildrenList>
+						<Action Name="" ID="{59ACCFBB-670F-481A-96F2-558B9C018551}" ShortID="205629871">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Microbe_02" ID="{8E1D01DE-AAD1-482E-A915-22CB840BC9B6}" WorkUnitID="{732BD922-C584-487D-9DF2-893CE835A401}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
