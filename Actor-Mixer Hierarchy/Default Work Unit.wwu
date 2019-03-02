@@ -14,6 +14,12 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="Bell fx" ID="{EB20DE3C-15D2-419B-88C6-A7686D3C56AA}" ShortID="15013037">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="6.27432077125327E-02"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="2.2964014022787"/>
+								<Property Name="TrimBegin" Type="Real64" Value="7.93074145486415"/>
+								<Property Name="TrimEnd" Type="Real64" Value="12.0341472392638"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Bell fx.wav</AudioFile>
 						</AudioFileSource>
@@ -33,6 +39,12 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="Drum fx" ID="{DE0E0852-8EB4-4CC1-A81E-3F11652DB0D9}" ShortID="366753596">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="7.33537832310835E-02"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="2.74343149284254"/>
+								<Property Name="TrimBegin" Type="Real64" Value="6.66052351738241"/>
+								<Property Name="TrimEnd" Type="Real64" Value="12.0006789366053"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Drum fx.wav</AudioFile>
 						</AudioFileSource>
@@ -52,31 +64,18 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="kick fx" ID="{1AC065A6-2348-4D6C-A5CD-91C9E981FDF7}" ShortID="267351749">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="5.32392638036809E-02"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="2.1675985977213"/>
+								<Property Name="TrimBegin" Type="Real64" Value="2.28928834355828"/>
+								<Property Name="TrimEnd" Type="Real64" Value="6.00082559158632"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>kick fx.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="kick fx" ID="{1AC065A6-2348-4D6C-A5CD-91C9E981FDF7}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Microbe sound" ID="{87B5A43D-9309-44F5-9561-E794CC07E3CD}" ShortID="702041022">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Microbe sound" ID="{36800B3B-C309-42C0-8B6C-ABD17EE86AA2}" ShortID="555982911">
-							<Language>SFX</Language>
-							<AudioFile>Microbe sound.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Microbe sound" ID="{36800B3B-C309-42C0-8B6C-ABD17EE86AA2}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="train" ID="{47928EA6-DBAB-4922-85A1-F6E12082F62F}" ShortID="79558901">
@@ -90,6 +89,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="train" ID="{9B7D13E7-5E27-4790-8AC9-CFC40829F1D5}" ShortID="537177264">
+							<PropertyList>
+								<Property Name="TrimEnd" Type="Real64" Value="27.8834355828221"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>train.wav</AudioFile>
 						</AudioFileSource>
@@ -98,9 +100,27 @@
 						<ActiveSource Name="train" ID="{9B7D13E7-5E27-4790-8AC9-CFC40829F1D5}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Drone 1 Loop" ID="{9723959F-FE3D-4CC4-8CF3-0353F8E03CA0}" ShortID="739643128">
+				<RandomSequenceContainer Name="Microbe_01" ID="{83FC3D3F-5FB6-4FE1-A1F9-9D4A85CF76F5}" ShortID="285931182">
 					<PropertyList>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>8</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{F27E1F4E-DA74-4801-865F-0D565BF63EE4}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="51"/>
+											<Property Name="Min" Type="Real64" Value="-51"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -111,19 +131,325 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="Drone 1 Loop" ID="{19699B8B-6B9D-46A6-AC19-143EE2D96B0C}" ShortID="234649643">
+						<Sound Name="Microbe_sound_00" ID="{87B5A43D-9309-44F5-9561-E794CC07E3CD}" ShortID="702041022">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Microbe sound" ID="{36800B3B-C309-42C0-8B6C-ABD17EE86AA2}" ShortID="555982911">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.70163899738997E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.12835641250365"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.2419096766127"/>
+										<Property Name="TrimEnd" Type="Real64" Value="6.10338241308794"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Microbe sound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Microbe sound" ID="{36800B3B-C309-42C0-8B6C-ABD17EE86AA2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Microbe_sound_01" ID="{7CDF762D-EDCD-4A9F-9904-A6CE9F123290}" ShortID="162636301">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Microbe sound" ID="{653F4368-5EE7-4301-A534-DE0F00015935}" ShortID="218985002">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.70163899738997E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.81220878371799"/>
+										<Property Name="TrimBegin" Type="Real64" Value="6.34425510529446"/>
+										<Property Name="TrimEnd" Type="Real64" Value="11.209480118155"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Microbe sound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Microbe sound" ID="{653F4368-5EE7-4301-A534-DE0F00015935}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Microbe_sound_02" ID="{727AA794-F54B-47D6-B774-C19F92EF878B}" ShortID="547616800">
 							<PropertyList>
-								<Property Name="FadeInDuration" Type="Real64" Value="2.15439252021847E-02"/>
-								<Property Name="FadeOutDuration" Type="Real64" Value="2.58527102426171E-02"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>Drone 1 Loop.wav</AudioFile>
-						</AudioFileSource>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Microbe sound" ID="{927115C4-9DE2-46F7-A034-A0BE7EC88007}" ShortID="496472055">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.70163899738997E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.81220878371799"/>
+										<Property Name="TrimBegin" Type="Real64" Value="13.1023628441561"/>
+										<Property Name="TrimEnd" Type="Real64" Value="17.7231739539715"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Microbe sound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Microbe sound" ID="{927115C4-9DE2-46F7-A034-A0BE7EC88007}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Microbe_sound_03" ID="{BD5848DB-87DD-4938-858E-0B6A0B977F30}" ShortID="530488851">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Microbe sound" ID="{A5A28EE9-DAAF-4143-9802-FBA2728AC83B}" ShortID="916323195">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.70163899738997E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.34915953444925"/>
+										<Property Name="TrimBegin" Type="Real64" Value="22.5416284051382"/>
+										<Property Name="TrimEnd" Type="Real64" Value="27.3996850066543"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Microbe sound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Microbe sound" ID="{A5A28EE9-DAAF-4143-9802-FBA2728AC83B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Microbe_sound_04" ID="{6D2FA8DC-E580-44FD-8593-504A38FED768}" ShortID="41177143">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Microbe sound" ID="{8D6979A3-7A1C-4767-9E5B-3E53320D59B2}" ShortID="694058528">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.70163899738997E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.34915953444925"/>
+										<Property Name="TrimBegin" Type="Real64" Value="27.6366469544245"/>
+										<Property Name="TrimEnd" Type="Real64" Value="31.869420088508"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Microbe sound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Microbe sound" ID="{8D6979A3-7A1C-4767-9E5B-3E53320D59B2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Microbe_sound_05" ID="{B2BF76DD-B924-4133-8FEF-7B84012D572B}" ShortID="907529372">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Microbe sound" ID="{48DF7935-E731-4F17-BA08-4F93AD549750}" ShortID="859379981">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.70163899738997E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.34915953444925"/>
+										<Property Name="TrimBegin" Type="Real64" Value="41.2934320862308"/>
+										<Property Name="TrimEnd" Type="Real64" Value="44.6745557394964"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Microbe sound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Microbe sound" ID="{48DF7935-E731-4F17-BA08-4F93AD549750}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Drone 1 Loop" ID="{19699B8B-6B9D-46A6-AC19-143EE2D96B0C}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Microbe_01_Bad" ID="{117D70D0-A9DE-401D-806F-F2C1E61B1726}" ShortID="62172599">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>8</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{185EDACF-BFCD-40BA-AA42-D30E42DD55DD}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="51"/>
+											<Property Name="Min" Type="Real64" Value="-51"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Microbe_sound_bad_01" ID="{E4996608-48EA-4843-9687-EB2E9AF36DE8}" ShortID="247602979">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Microbe sound" ID="{996B699B-5DE5-4608-B105-EFABDB08560A}" ShortID="428735710">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.70163899738997E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.58003668237979"/>
+										<Property Name="TrimBegin" Type="Real64" Value="45.6270298904816"/>
+										<Property Name="TrimEnd" Type="Real64" Value="48.7078072708343"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Microbe sound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Microbe sound" ID="{996B699B-5DE5-4608-B105-EFABDB08560A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Microbe_sound_bad_02" ID="{85CCF287-F798-40EA-A59A-90D4B69E53F3}" ShortID="647676057">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Microbe sound" ID="{52C04729-E78A-4BD1-87AD-D1742DF70A4C}" ShortID="347620097">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.70163899738997E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.58003668237979"/>
+										<Property Name="TrimBegin" Type="Real64" Value="49.7092251769198"/>
+										<Property Name="TrimEnd" Type="Real64" Value="53.5289664878953"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Microbe sound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Microbe sound" ID="{52C04729-E78A-4BD1-87AD-D1742DF70A4C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Microbe_01_long" ID="{CC4ED5F3-F78D-4150-AF48-32204F334A74}" ShortID="796986770">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>8</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{5118DD75-7DBA-4E05-B84E-174E6B5716AC}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="51"/>
+											<Property Name="Min" Type="Real64" Value="-51"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Microbe_sound_long" ID="{CF8E1FC9-FC68-4A9D-9D3C-A4AA7D157025}" ShortID="1014872282">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2979BB4D-EE46-49FC-BF8D-C3D91ED43AD1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5F87DC03-D958-43ED-ADE5-976F1245E74A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Microbe sound" ID="{8F771550-CA93-44DC-8C7C-E3351BD45F5B}" ShortID="169351585">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.70163899738997E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.34915953444925"/>
+										<Property Name="TrimBegin" Type="Real64" Value="36.3173507579131"/>
+										<Property Name="TrimEnd" Type="Real64" Value="40.793693532855"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Microbe sound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Microbe sound" ID="{8F771550-CA93-44DC-8C7C-E3351BD45F5B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

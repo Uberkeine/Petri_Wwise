@@ -299,7 +299,7 @@
 								</MusicSegment>
 								<MusicSegment Name="End amb" ID="{A84F5B2A-EE66-4B55-B296-045E71C3C416}" ShortID="409136604">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="9940"/>
+										<Property Name="EndPosition" Type="Real64" Value="10217.7182770664"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -335,10 +335,11 @@
 													<ClipList>
 														<MusicClip Name="End amb" ID="{DF4CE17E-B9C0-451E-B37B-2FB48891CA28}">
 															<PropertyList>
-																<Property Name="BeginTrimOffset" Type="Real64" Value="-2.79221090693227E-14"/>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="2406.89173457509"/>
 																<Property Name="EndTrimOffset" Type="Real64" Value="9940"/>
-																<Property Name="FadeInDuration" Type="Real64" Value="104.144353899884"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="81.0011641443543"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="567.008149010478"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="601.722933643772"/>
+																<Property Name="PlayAt" Type="Real64" Value="-2406.89173457509"/>
 															</PropertyList>
 															<AudioSourceRef Name="End amb" ID="{05DC6A47-D336-49AB-82A8-8DF565551689}"/>
 															<PropertyCurveList>
@@ -349,7 +350,7 @@
 																		</PropertyList>
 																		<PointList>
 																			<Point>
-																				<XPos>-0</XPos>
+																				<XPos>2.40689</XPos>
 																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
@@ -368,7 +369,7 @@
 																		</PropertyList>
 																		<PointList>
 																			<Point>
-																				<XPos>-0</XPos>
+																				<XPos>2.40689</XPos>
 																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
@@ -387,7 +388,7 @@
 																		</PropertyList>
 																		<PointList>
 																			<Point>
-																				<XPos>-0</XPos>
+																				<XPos>2.40689</XPos>
 																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
@@ -409,13 +410,13 @@
 									<CueList>
 										<MusicCue Name="Entry Cue" ID="{88FB2F39-5F42-43B0-8982-F7615638E534}">
 											<PropertyList>
-												<Property Name="TimeMs" Type="Real64" Value="2001.88591385332"/>
+												<Property Name="TimeMs" Type="Real64" Value="1967.17112922003"/>
 											</PropertyList>
 										</MusicCue>
 										<MusicCue Name="Exit Cue" ID="{12D09337-245E-4771-BB6C-BD2BF337D1B5}">
 											<PropertyList>
 												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="9940"/>
+												<Property Name="TimeMs" Type="Real64" Value="7822.39813736903"/>
 											</PropertyList>
 										</MusicCue>
 									</CueList>
@@ -462,8 +463,7 @@
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
 										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
-										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -479,8 +479,8 @@
 											<MusicFade Name="Source Fade-out" ID="{52C3AAE5-50E4-41CA-8B85-2DC1FE7B803F}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="1"/>
-													<Property Name="FadeOffset" Type="Real64" Value="1.5"/>
-													<Property Name="FadeTime" Type="Real64" Value="3"/>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>C:\Users\louis.naudin\Documents\Petri\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\louis.naudin\Documents\Petri\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\louis.naudin\Documents\Petri\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\louis.naudin\Documents\Petri\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4132006485" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank_Petri</ObjectPath>
+			<ShortName>Soundbank_Petri</ShortName>
+			<Path>Soundbank_Petri.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4042141136" Name="Play_Drone" ObjectPath="\Events\Default Work Unit\Play_Drone"/>
+				<Event Id="1635495179" Name="Play_Mic_1" ObjectPath="\Events\Default Work Unit\Play_Mic_1"/>
+				<Event Id="410230462" Name="Stop_Drone" ObjectPath="\Events\Default Work Unit\Stop_Drone"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="107602187" Language="SFX">
+					<ShortName>End amb.wav</ShortName>
+					<Path>SFX\End amb_8956FC97.wem</Path>
+				</File>
+				<File Id="218985002" Language="SFX">
+					<ShortName>Microbe sound.wav</ShortName>
+					<Path>SFX\Microbe sound_B0F64A25.wem</Path>
+				</File>
+				<File Id="286046264" Language="SFX">
+					<ShortName>End amb 2.wav</ShortName>
+					<Path>SFX\End amb 2_8956FC97.wem</Path>
+				</File>
+				<File Id="496472055" Language="SFX">
+					<ShortName>Microbe sound.wav</ShortName>
+					<Path>SFX\Microbe sound_E7522924.wem</Path>
+				</File>
+				<File Id="555982911" Language="SFX">
+					<ShortName>Microbe sound.wav</ShortName>
+					<Path>SFX\Microbe sound_9AD0D893.wem</Path>
+				</File>
+				<File Id="694058528" Language="SFX">
+					<ShortName>Microbe sound.wav</ShortName>
+					<Path>SFX\Microbe sound_14AD1D85.wem</Path>
+				</File>
+				<File Id="859379981" Language="SFX">
+					<ShortName>Microbe sound.wav</ShortName>
+					<Path>SFX\Microbe sound_C9891287.wem</Path>
+				</File>
+				<File Id="916323195" Language="SFX">
+					<ShortName>Microbe sound.wav</ShortName>
+					<Path>SFX\Microbe sound_78DCF02C.wem</Path>
+				</File>
+				<File Id="957396463" Language="SFX">
+					<ShortName>Drone 1 Loop.wav</ShortName>
+					<Path>SFX\Drone 1 Loop_8956FC97.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

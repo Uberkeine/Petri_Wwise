@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	410230462	Stop_Drone			\Default Work Unit\Stop_Drone	
+	1635495179	Play_Mic_1			\Default Work Unit\Play_Mic_1	
+	4042141136	Play_Drone			\Default Work Unit\Play_Drone	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	107602187	End amb	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\End amb_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch_Amb\End_Drone\End amb\End amb		1908544
+	218985002	Microbe_sound_01	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Microbe sound_B0F64A25.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_01\Microbe_sound_01		934188
+	286046264	End amb 2	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\End amb 2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch_Amb\End_Drone\End amb 2\End amb 2		2905280
+	496472055	Microbe_sound_02	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Microbe sound_E7522924.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_01\Microbe_sound_02		887260
+	555982911	Microbe_sound_00	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Microbe sound_9AD0D893.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_01\Microbe_sound_00		933464
+	694058528	Microbe_sound_04	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Microbe sound_14AD1D85.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_01\Microbe_sound_04		812756
+	859379981	Microbe_sound_05	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Microbe sound_C9891287.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_01\Microbe_sound_05		649240
+	916323195	Microbe_sound_03	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Microbe sound_78DCF02C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Microbe_01\Microbe_sound_03		932812
+	957396463	Drone 1 Loop	C:\Users\louis.naudin\Documents\Petri\.cache\Windows\SFX\Drone 1 Loop_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch_Amb\Playlist_Drone\Drone\Drone 1 Loop		24192064
+

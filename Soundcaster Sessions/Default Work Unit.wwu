@@ -9,6 +9,10 @@
 							<ObjectRef Name="Play_Drone" ID="{45F56F12-0C36-4E4F-B7EF-D7D546ED99CD}" WorkUnitID="{A6C78077-5A9B-4A4A-8D05-F6635E00C931}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_Mic_1" ID="{E768D18F-7372-4074-AE0C-8F761610589E}" WorkUnitID="{A6C78077-5A9B-4A4A-8D05-F6635E00C931}"/>
+							<Position X="1" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
