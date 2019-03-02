@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A6C78077-5A9B-4A4A-8D05-F6635E00C931}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{A6C78077-5A9B-4A4A-8D05-F6635E00C931}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Drone" ID="{45F56F12-0C36-4E4F-B7EF-D7D546ED99CD}">
+					<ChildrenList>
+						<Action Name="" ID="{D8229076-14B6-41E8-A57F-62B2DCE42684}" ShortID="549632646">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Switch_Amb" ID="{9EF985B6-40F9-4C81-B5BB-A674C232B7BF}" WorkUnitID="{AAD39B5D-CCBD-48A5-89E7-B1D4AFB4E219}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Drone" ID="{2A2F5421-2AC5-45EB-B35B-D4D665448C92}">
+					<ChildrenList>
+						<Action Name="" ID="{6D403B74-3C43-4081-9769-BF6D1B15B9CD}" ShortID="985332097">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Switch_Amb" ID="{9EF985B6-40F9-4C81-B5BB-A674C232B7BF}" WorkUnitID="{AAD39B5D-CCBD-48A5-89E7-B1D4AFB4E219}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
